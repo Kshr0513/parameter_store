@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "parameter/1.0.0": {
+        "dependencies": {
+          "AWSSDK.SimpleSystemsManagement": "4.0.6.6"
+        },
+        "runtime": {
+          "parameter.dll": {}
+        }
+      },
+      "AWSSDK.Core/4.0.3.5": {
+        "runtime": {
+          "lib/net8.0/AWSSDK.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.3.5"
+          }
+        }
+      },
+      "AWSSDK.SimpleSystemsManagement/4.0.6.6": {
+        "dependencies": {
+          "AWSSDK.Core": "4.0.3.5"
+        },
+        "runtime": {
+          "lib/net8.0/AWSSDK.SimpleSystemsManagement.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.6.6"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "parameter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AWSSDK.Core/4.0.3.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oB1rqOv3dh/rUkObmzhWmI/Dr9r2pECfznVYSy8b1gY5IR9zIgMF17mJwlIyO8zWz5qnGz4lZ1yQS0j/GSqivw==",
+      "path": "awssdk.core/4.0.3.5",
+      "hashPath": "awssdk.core.4.0.3.5.nupkg.sha512"
+    },
+    "AWSSDK.SimpleSystemsManagement/4.0.6.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EM6CeRok3dPiNp1IjLkfSLmUHt6qd6NzBm5m33MNJpy23M9nMSiXptjOSFoPpQwo8hisJeum8atfVblA2ZzzJg==",
+      "path": "awssdk.simplesystemsmanagement/4.0.6.6",
+      "hashPath": "awssdk.simplesystemsmanagement.4.0.6.6.nupkg.sha512"
+    }
+  }
+}
