@@ -16,3 +16,4 @@
 /Users/kasahara/dev/parameter/obj/Debug/net9.0/parameter.pdb
 /Users/kasahara/dev/parameter/obj/Debug/net9.0/parameter.genruntimeconfig.cache
 /Users/kasahara/dev/parameter/obj/Debug/net9.0/ref/parameter.dll
+/Users/kasahara/dev/parameter/obj/Debug/net9.0/parameter.sourcelink.json
