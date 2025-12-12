@@ -9,7 +9,7 @@ class Program
     {
         //パラメータストアへアクセスするクライアントを作成
         var ssm = new AmazonSimpleSystemsManagementClient();
-        
+
         try
         {
             //パラメータストアからパラメータを取得
@@ -25,6 +25,7 @@ class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Error: {ex.Message}");
+            Console.WriteLine("取得成功");
         }
     } 
 }
