@@ -1,3 +1,10 @@
-# .env
+# env
 .env
 .env.*
+
+# .NET build outputs
+bin/
+obj/
+
+# macOS
+.DS_Store
