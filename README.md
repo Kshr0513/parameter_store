@@ -19,3 +19,16 @@
     * AWS Secret Access Key [None]: {シークレットアクセスキー}
     * Default region name [None]: ap-northeast-1 最寄りのリージョン
     * Default output format [None]: json
+***
+* AWS CLIの使い方
+    * SSMパラメータストアにパラメータを追加
+        * `aws ssm put-parameter --name キー --value 値 --description "説明" --type "SecureString"`
+        * SecureStringにする場合は--typeオプションにSecureStringを指定
+    * SSMパラメータストアからパラメータを取得
+        * `aws ssm get-parameter --name キー`
+        * 値だけ取り出したい場合は--queryオプションと--outputオプションを指定する
+        * `aws ssm get-parameter --query "Parameter.Value" --output text --name キー`
+        * secure stringの場合-with-decryptionオプションをつけ複合したパラメータが表示
+        * `awas ssm get-parameter --with-decryption --query "Parameter.Value" --output text --name キー`
+    * パラメータの値を更新
+        * `aws ssm put-parameter --name キー --value 値 --overwrite`
